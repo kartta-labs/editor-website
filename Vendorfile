@@ -51,7 +51,7 @@ folder 'vendor/assets' do
   end
 
   folder 'iD' do
-    from 'git://github.com/kartta-labs/iD', :branch => 'master' do
+    from "ssh://#{ENV['USER']}@google.com@source.developers.google.com:2022/p/historical-maps-repo/r/branded-iD", :branch => 're-brand' do
       folder 'iD/img', 'dist/img'
       folder 'iD/locales', 'dist/locales'
       folder 'iD/mapillary-js', 'dist/mapillary-js'
