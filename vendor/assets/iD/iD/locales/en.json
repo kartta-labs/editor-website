@@ -10443,6 +10443,13 @@
                 "description": "Overlay imagery showing railway signals based on OpenStreetMap data",
                 "name": "OpenRailwayMap Signalling"
             },
+            "osm-gps": {
+                "attribution": {
+                    "text": "© OpenStreetMap contributors"
+                },
+                "description": "Public GPS traces uploaded to OpenStreetMap.",
+                "name": "OpenStreetMap GPS traces"
+            },
             "osm-mapnik-black_and_white": {
                 "attribution": {
                     "text": "© OpenStreetMap contributors, CC-BY-SA"
@@ -10493,6 +10500,13 @@
                 },
                 "description": "Orthophotos from the municipality of Stockholm 2016, CC0 license",
                 "name": "Stockholm Orthophoto"
+            },
+            "susono_shizuoka_jp_orthophoto": {
+                "attribution": {
+                    "text": "Susono city orthophoto"
+                },
+                "description": "The aerial photos released by Susono City as open data.",
+                "name": "Susono city orthophoto"
             },
             "tf-cycle": {
                 "attribution": {
