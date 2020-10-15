@@ -38,7 +38,8 @@ L.OSM.Map = L.Map.extend({
     this.baseLayers = [];
 
     this.baseLayers.push(new L.OSM.VAntique({
-      attribution: 'Coastlines © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+      //attribution: 'Coastlines © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+      attribution: '<a href="/copyright">Copyright</a>',
       code: "A",
       name: I18n.t("javascripts.map.base.antique"),
       keyid: "antique"
@@ -53,37 +54,38 @@ L.OSM.Map = L.Map.extend({
     }));
 */
 
-    this.baseLayers.push(new L.OSM.Xray({
-      attribution: 'Coastlines © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors', 
-      name: I18n.t("javascripts.map.base.xray"),
-      code: "X",
-      keyid: "xray"
-    }));
 
-    this.baseLayers.push(new L.OSM.Mapnik({
-      attribution: copyright + ". " ,
-      code: "M",
-      keyid: "mapnik",
-      name: I18n.t("javascripts.map.base.standard")
-    }));
+//    this.baseLayers.push(new L.OSM.Xray({
+//      attribution: 'Coastlines © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors', 
+//      name: I18n.t("javascripts.map.base.xray"),
+//      code: "X",
+//      keyid: "xray"
+//    }));
+//
+//    this.baseLayers.push(new L.OSM.Mapnik({
+//      attribution: copyright + ". " ,
+//      code: "M",
+//      keyid: "mapnik",
+//      name: I18n.t("javascripts.map.base.standard")
+//    }));
 
-    if (OSM.THUNDERFOREST_KEY) {
-      this.baseLayers.push(new L.OSM.CycleMap({
-        attribution: copyright + ". Tiles courtesy of <a href='https://www.thunderforest.com/' target='_blank'>Andy Allan</a>. " + terms,
-        apikey: OSM.THUNDERFOREST_KEY,
-        code: "C",
-        keyid: "cyclemap",
-        name: I18n.t("javascripts.map.base.cycle_map")
-      }));
-
-      this.baseLayers.push(new L.OSM.TransportMap({
-        attribution: copyright + ". Tiles courtesy of <a href='https://www.thunderforest.com/' target='_blank'>Andy Allan</a>. " + terms,
-        apikey: OSM.THUNDERFOREST_KEY,
-        code: "T",
-        keyid: "transportmap",
-        name: I18n.t("javascripts.map.base.transport_map")
-      }));
-    }
+//    if (OSM.THUNDERFOREST_KEY) {
+//      this.baseLayers.push(new L.OSM.CycleMap({
+//        attribution: copyright + ". Tiles courtesy of <a href='https://www.thunderforest.com/' target='_blank'>Andy Allan</a>. " + terms,
+//        apikey: OSM.THUNDERFOREST_KEY,
+//        code: "C",
+//        keyid: "cyclemap",
+//        name: I18n.t("javascripts.map.base.cycle_map")
+//      }));
+//
+//      this.baseLayers.push(new L.OSM.TransportMap({
+//        attribution: copyright + ". Tiles courtesy of <a href='https://www.thunderforest.com/' target='_blank'>Andy Allan</a>. " + terms,
+//        apikey: OSM.THUNDERFOREST_KEY,
+//        code: "T",
+//        keyid: "transportmap",
+//        name: I18n.t("javascripts.map.base.transport_map")
+//      }));
+//    }
 
     // this.baseLayers.push(new L.OSM.HOT({
     //   attribution: copyright + ". Tiles style by <a href='https://www.hotosm.org/' target='_blank'>Humanitarian OpenStreetMap Team</a> hosted by <a href='https://openstreetmap.fr/' target='_blank'>OpenStreetMap France</a>. " + terms,
