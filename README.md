@@ -4,7 +4,6 @@ This is a customised version of the openstreetmap-website for historic map editi
 
 See https://github.com/openstreetmap/openstreetmap-website for fuller OSM docs
 
-
 # License
 
 This software is licensed under the [GNU General Public License 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt),
