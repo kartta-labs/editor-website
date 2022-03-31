@@ -160,5 +160,5 @@ group :development, :test do
   gem "erb_lint", :require => false
   gem "factory_bot_rails"
   gem "poltergeist"
-  gem "puma", "~> 3.7"
+  gem "puma", "~> 5.6"
 end
